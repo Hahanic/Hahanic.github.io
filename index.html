@@ -1,47 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head lang="zh-CN">
-        <meta charset="UTF-8">
-        <title>TH06_Album</title>
-    </head>
-    <body>
-        <!--
-        <div>
-            <a href="./music/赤より紅い夢.mp3" target="b">赤より紅い夢</a>
-        
-            <iframe name="b" frameborder></iframe>
-    
-            <a href="./music/ほおずきみたいに紅い魂.mp3" target="b">ほおずきみたいに紅い魂</a>
+ <head>
+        <meta charset="utf-8"/>
+        <title>《女神异闻录5:皇家版》</title>
+        <link rel="icon" href="./img/alibabaicon.png">
+        <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div id="totop"></div>
+
+<div class="ladder">  
+
+    <header>
+        <h1 class="titletext">Persona 5 Royal</h1>
+        <div class="buttonarea">
+            <a href="https://asia.sega.com/persona-remaster/p5r/cht/" class="button">官方网站</a>
+            <a href="https://limbuscompany.com/" class="button">购买</a>
+            <a href="https://asia.sega.com/persona-remaster/p5r/cht/shopguide_tw/" class="button">画廊</a>
         </div>
-        -->
-        <p>
-            <img height="500" src="Album_th06.jpg" alt="Album art">
-        </p>
+    </header>
 
-            <!--无序列表-->
-        <div>
-            <h2>th06东方红魔乡</h2>
-            <ol>
-                <li>赤より紅い夢<br><audio controls><source src="./music/赤より紅い夢.mp3"></audio></li>
-                <li>ほおずきみたいに紅い魂<br><audio controls><source src="./music/ほおずきみたいに紅い魂.mp3"></audio></li>
-                <li>妖魔夜行<br><audio controls><source src="./music/妖魔夜行.mp3"></audio></li>
-                <li>ルーネイトエルフ<br><audio controls><source src="./music/ルーネイトエルフ.mp3"></audio></li>
-                <li>おてんば恋娘<br><audio controls><source src="./music/おてんば恋娘.mp3"></audio></li>
-                <li>上海紅茶館～Chinese Tea<br><audio controls><source src="./music/上海紅茶館～Chinese Tea.mp3"></audio></li>
-                <li>明治十七年の上海アリス<br><audio controls><source src="./music/明治十七年の上海アリス.mp3"></audio></li>
-                <li>ヴワル魔法図書館<br><audio controls><source src="./music/ヴワル魔法図書館.mp3"></audio></li>
-                <li>ラクトガール～少女密室<br><audio controls><source src="./music/ラクトガール～少女密室.mp3"></audio></li>
-                <li>メイドと血の懐中時計<br><audio controls><source src="./music/メイドと血の懐中時計.mp3"></audio></li>
-                <li>月時計～ルナ・ダイアル<br><audio controls><source src="./music/月時計～ルナ・ダイアル.mp3"></audio></li>
-                <li>ツェペシュの幼き末裔<br><audio controls><source src="./music/ツェペシュの幼き末裔.mp3"></audio></li>
-                <li>亡き王女の為のセプテット<br><audio controls><source src="./music/亡き王女の為のセプテット.mp3"></audio></li>
-                <li>魔法少女達の百年祭<br><audio controls><source src="./music/魔法少女達の百年祭.mp3"></audio></li>
-                <li>U.N.オーエンは彼女なのか？<br><audio controls><source src="./music/U.N.オーエンは彼女なのか？.mp3"></audio></li>
-                <li>紅より儚い永遠<br><audio controls><source src="./music/紅より儚い永遠.mp3"></audio></li>
-                <li>紅楼～Eastern Dream...<br><audio controls><source src="./music/紅楼～Eastern Dream....mp3"></audio></li>
+    <div class="main">
+        <div id="poster">
+            <div class="overlaytext">
+                <img class="floattext" src="./img/text1.png">
+                <img class="floattext" src="./img/text2.png">
+            </div>
+            <img id="logo" src="./img/p5r.png" alt="P5R Logo">
+            <a href="buy.html" class="buynow"></a>
+            <div class="pv">
+                <video autoplay muted onclick="Popup()">
+                    <source src="./assets/p5r_pv.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <button id="openbtn" onclick="Popup()"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="facesin"></div>
+
+    <div class="warp">
+        <div class="warp-content">
+            <ol class="album_th06">
+                <li>赤より紅い夢<br><audio controls><source src="./assets/music/赤より紅い夢.mp3"></audio></li>
+                <li>ほおずきみたいに紅い魂<br><audio controls><source src="./assets/music/ほおずきみたいに紅い魂.mp3"></audio></li>
+                <li>妖魔夜行<br><audio controls><source src="./assets/music/妖魔夜行.mp3"></audio></li>
+                <li>ルーネイトエルフ<br><audio controls><source src="./assets/music/ルーネイトエルフ.mp3"></audio></li>
+                <li>おてんば恋娘<br><audio controls><source src="./assets/music/おてんば恋娘.mp3"></audio></li>
+                <li>上海紅茶館～Chinese Tea<br><audio controls><source src="./assets/music/上海紅茶館～Chinese Tea.mp3"></audio></li>
+                <li>明治十七年の上海アリス<br><audio controls><source src="./assets/music/明治十七年の上海アリス.mp3"></audio></li>
+                <li>ヴワル魔法図書館<br><audio controls><source src="./assets/music/ヴワル魔法図書館.mp3"></audio></li>
+                <li>ラクトガール～少女密室<br><audio controls><source src="./assets/music/ラクトガール～少女密室.mp3"></audio></li>
+                <li>メイドと血の懐中時計<br><audio controls><source src="./assets/music/メイドと血の懐中時計.mp3"></audio></li>
+                <li>月時計～ルナ・ダイアル<br><audio controls><source src="./assets/music/月時計～ルナ・ダイアル.mp3"></audio></li>
+                <li>ツェペシュの幼き末裔<br><audio controls><source src="./assets/music/ツェペシュの幼き末裔.mp3"></audio></li>
+                <li>亡き王女の為のセプテット<br><audio controls><source src="./assets/music/亡き王女の為のセプテット.mp3"></audio></li>
+                <li>魔法少女達の百年祭<br><audio controls><source src="./assets/music/魔法少女達の百年祭.mp3"></audio></li>
+                <li>U.N.オーエンは彼女なのか？<br><audio controls><source src="./assets/music/U.N.オーエンは彼女なのか？.mp3"></audio></li>
+                <li>紅より儚い永遠<br><audio controls><source src="./assets/music/紅より儚い永遠.mp3"></audio></li>
+                <li>紅楼～Eastern Dream...<br><audio controls><source src="./assets/music/紅楼～Eastern Dream....mp3"></audio></li>
+                <img id="limlogo" src="./img/limbus/iocn.png">
+                <div id="limbus-th"></div>
             </ol>
-        </div>   
             
+        </div>
+    </div>
 
-    </body>
+
+</div>
+
+
+<a href="#totop" id="backToTop"></a>
+</body>
+
+
 </html>
